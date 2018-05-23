@@ -1,203 +1,1151 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Parallax Scrolling</title>
-	<style>
-		body{
-			margin:0;
-
-		}
-
-		#all{
-			height:300vh ;
-			width: 80%;
-			margin-left: auto;
-			margin-right: auto;
-			background-color: black;
-			background-position: center;
-
-			
-			
-		}
-			#logo{
-				height:12vh ;
-				width: 12vh;
-
-				background-color: black;
-				border-radius: 6vh;
-
-				position: fixed;
-				left: calc(10% + 10px);
-				top: 30px;
-				z-index: 2;
-			}
-			#nb{
-				height:10vh ;
-				width: 40vh;
-				background-color: black;
-				position: fixed;
-				top: 30px;
-				right: calc(10% + 10px);
-				padding: 2vh;
-				z-index: 2;
-
-			}
-			#nbA{
-				height:10vh ;
-				width: 33%;
-				background-color: white;
-				float: left ;
-				margin-right: 2px;
-				
-			}
-			#nbB{
-				height:10vh ;
-				width: 33%;
-				background-color: gray;
-				float: left ;
-				
-			}
-			#nbC{
-				height:10vh ;
-				width: 33%;
-				background-color: white;
-				float: right  ;
-				
-			}
-
-			#top{
-				height:100vh;
-				width: 100%;
-				background-color: red;
-			}
-				#top_up{
-				height:50vh;
-				width: 100%;
-					background-color: #EEEE00;
-					background-image: url('img/A.jpg');
-					background-size:cover ;
-					background-position: center;
-					background-attachment:fixed;
-			}	
-					
-				#top_down{
-				height:calc(25vh + 15px);
-				width: 100%;
-				background-color: #66FFFF;
-				position: relative;
-				padding-top: calc(25vh - 15px);
-			}
-				#T_D-A{
-				height:30px;
-				width: 60px;
-				background-color:#FFCCCC;
-								
-
-				margin-left: auto;
-				margin-right: auto;
-				}
-
-			#main{
-				height:100vh;
-				width: 100%;
-				background-color: white; 
-			}
-				#main_up{
-				height:50vh;
-				width: 100%;
-				background-color: #FF77FF;
-				background-image: url('img/B.png');
-				background-size:cover ;
-				background-position: center;
-				background-attachment:fixed;
-			}	
-				#main_down{
-				height:calc(25vh + 15px);
-				width: 100%;
-				background-color: #66FFFF;
-				position: relative;
-				padding-top: calc(25vh - 15px);
-			}
-				
-				#M_D_A{
-				height:30px;
-				width: 60px;
-				background-color:#FFCCCC;
-								
-
-				margin-left: auto;
-				margin-right: auto;
-				
-				}
-
-			#down{
-				height:100vh ;
-				width: 100%;
-				background-color: yellow;
-			}
-				#down_up{
-				height:50vh;
-				width: 100%;
-				background-color: #CCDDFF;
-				background-image: url('img/C.jpg');
-				background-size:cover ;
-				background-position: center;
-				background-attachment:fixed;
-			}	
-				#down_laed{
-				height:calc(25vh + 15px);
-				width: 100%;
-				background-color: #66FFFF;
-				position: relative;
-				padding-top: calc(25vh - 15px);
-
-			}
-
-			
-				
-				#D_L_A{
-				height:30px;
-				width: 60px;
-				background-color:#FFCCCC;
-								
-
-				margin-left: auto;
-				margin-right: auto;
-				}
-
-
-	</style>
+	<meta charset="zh-Hant-TW">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>豆豆咖啡店</title>
+	<link rel="stylesheet" href="style/DouDou-coffee-style.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<link rel="stylesheet" href="style/swiper_style.css">
 </head>
-<body>
-	<div id="all">
-		<div id="logo"></div>
-		<div id="nb">
-			<div id="nbA"></div>
-			<div id="nbB"></div>
-			<div id="nbC"></div>
+<body> 
+	<div class="navbar">
+		<div class="nb-logo"></div>
+		<div class="nb-list">			
+				<a href="#about-us"><h6>關於我們</h6></a>
+				<a href="#latest-news"><h6>最新消息</h6></a>
+				<a href="#coffee-bean-introduction"><h6>豆豆介紹</h6></a>
+				<a href="#product-area"><h6>產品專區</h6></a>
+				<a href="#offee-appliance"><h6>咖啡器具</h6></a>
+				<a href="#knowledge-share"><h6>知識補給站</h6></a>			
 		</div>
-		<div id="top">
-			<div id="top_up">
-							</div>
-			<div id="top_down">
-				<div id="T_D-A"></div>
-			</div>
-		</div>
-		<div id="main">
-			<div id="main_up"></div>
-			<div id="main_down">
-				<div id="M_D_A"></div>
-			</div>
-		</div>
-		<div id="down">
-			<div id="down_up"></div>
-			<div id="down_laed">
-				<div id="D_L_A"></div>
-			</div>
-
-		</div>
+		<div class="clear-both"></div>
 	</div>
 	
+	<div class="jumbotron">
+			  <!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url(img/1.Jumbotron/shutterstock_2033932661.jpg);"></div>
+				<div class="swiper-slide" style="background-image: url(img/1.Jumbotron/jumbotron_2.jpg);"></div>
+				<div class="swiper-slide" style="background-image: url(img/1.Jumbotron/jumbotron_3.jpg);"></div>
+				<!-- <div class="swiper-slide" style="background-image: url(img/1.Jumbotron/jumbotron_4.jpg);"></div>
+				<div class="swiper-slide" style="background-image: url(img/1.Jumbotron/jumbotron_5.jpg);"></div> -->
+				<!-- <div class="swiper-slide">Slide 6</div>
+				<div class="swiper-slide">Slide 7</div>
+				<div class="swiper-slide">Slide 8</div>
+				<div class="swiper-slide">Slide 9</div>
+				<div class="swiper-slide">Slide 10</div> -->
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<!-- <div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div> -->
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="about-us" class="Area about-us "><!-- 關於我們 -->
+			<div class="titlenames au-titlename">
+				<h2 align="center">關於我們</h2>
+			</div>
+			<div class="informations au-information">
+				<div class="au-L">
+					<div class="au-img"></div>
+				</div>
+				<div class="au-R">
+					<div class="demo au-dome">  
+					    <div id="tabs3" class="mainNavg titlelists au-titlelist">  
+					        <ul>  
+					            <li id="tab_a-1" onclick="changeTab(1)" class="nowShowA">開店歷史</li>  
+					            <li id="tab_a-2" onclick="changeTab(2)" class="otherA">經營理念</li>  
+					            <li id="tab_a-3" onclick="changeTab(3)" class="otherA">聯絡資訊</li>
+					           
+					        </ul>  
+					    </div>  
+					    <div id="tabs-1" class="showTabDiv" style='display:block;'>		
+					    	<div class="au-txt">
+								<p>營業時間：08:00-22:00</p>
+								<p>訂購電話：04-7890202</p>
+								<p>信箱：asdf@gmaii.com</p>
+								<p>地址：台中市自由區公園路1號</p>
+							</div>
+					    </div>  
+					    <div id="tabs-2" class="showTabDiv" style='display:none;float:left;width:100%'>  
+					        <div class="au-txt">
+								<p>營業時間：08:00-22:00</p>
+								<p>訂購電話：04-7890202</p>
+								<p>信箱：asdf@gmaii.com</p>
+								<p>地址：台中市</p>
+							</div>
+					    </div>  
+					    <div id="tabs-3" class="showTabDiv" style='display:none;float:left;width:100%'> 					        
+					        <div class="au-txt">
+								<p>營業時間：08:00-22:00</p>
+								<p>訂購電話：04-7890202</p>
+								<p>信箱：asdf@gmaii.com</p>
+								<p>地址：台中市自由區公園路1號</p>
+							</div>
+					    </div>
+					</div> 
+				</div> 
+				
+
+					<!-- <div class="titlelists au-titlelist">
+						<h5>開店歷史</h5>
+						<h5>經營理念</h5>
+						<h5>聯絡資訊</h5>	
+					</div>
+					<div class="au-txt">
+						<p>營業時間：08:00-22:00</p>
+						<p>訂購電話：04-7890202</p>
+						<p>信箱：asdf@gmaii.com</p>
+						<p>地址：台中市自由區公園路1號</p>
+						
+					</div> -->
+				
+			</div>
+		</div>
+
+		<div id="latest-news" class="Area latest-news"><!-- 最新消息 -->
+			<div class="titlenames ln-titlename">
+				<h2 align="center">最新消息</h2>
+			</div>
+			<div class="demo ln-dome">  
+			    <div id="tabs4" class="mainNavg titlelists ln-titlelist">  
+			        <ul>  
+			            <li id="tab_a-ln-1" onclick="changeTab_ln(1)" class="nowShowA">公告</li>  
+			            <li id="tab_a-ln-2" onclick="changeTab_ln(2)" class="otherA">緊急公告</li>  
+			            <li id="tab_a-ln-3" onclick="changeTab_ln(3)" class="otherA">活動專區</li>
+			            <li id="tab_a-ln-4" onclick="changeTab_ln(4)" class="otherA">產品專區</li>  
+			        </ul>  
+			    </div>  
+			    <div id="tabs-ln-1" class="showTabDiv informations ln-informations" style='display:block;'>  
+			        
+			        <div class="new_1">
+						<h3>【感謝媽咪-母親節蛋糕】</h3>
+						<h6>2018-04-10</h6>
+						<p>母親節蛋糕預購95折，任選2件再95折</p>
+						<hr class="hr1" align="center">
+					</div>
+					<div class="new_2">
+						<h3>【豆粉好友分享日】</h3>
+						<h6>2018-03-15</h6>
+						<p>豆粉專屬限購</p>
+						<hr class="hr1" align="center">
+					</div>
+
+					<div class="new_3">
+						<h3>【柚蜜系列茶飲】</h3>
+						<h6>2018-02-14</h6>
+						<p>豆粉專屬限購</p>
+						<hr class="hr1" align="center">
+					</div>
+			    </div>  
+			    <div id="tabs-ln-2" class="showTabDiv informations ln-informations" style='display:none;'>  
+			        tabs2的內容
+			        <div class="new_1">
+						<h3>【感謝媽咪-母親節蛋糕】</h3>
+						<h6>2018-04-10</h6>
+						<p>母親節蛋糕預購95折，任選2件再95折</p>
+						<hr class="hr1" align="center">
+					</div>
+					<div class="new_2">
+						<h3>【豆粉好友分享日】</h3>
+						<h6>2018-03-15</h6>
+						<p>豆粉專屬限購</p>
+						<hr class="hr1" align="center">
+					</div>
+
+					<div class="new_3">
+						<h3>【柚蜜系列茶飲】</h3>
+						<h6>2018-02-14</h6>
+						<p>豆粉專屬限購</p>
+						<hr class="hr1" align="center">
+					</div>
+			    </div>  
+			    <div id="tabs-ln-3" class="showTabDiv informations ln-informations" style='display:none;'>  
+			        tabs3的內容
+			    </div>
+			    <div id="tabs-ln-4" class="showTabDiv informations ln-informations" style='display:none;'>  
+			        tabs4的內容
+			    </div> 
+			</div>  
+			<!-- <div class="titlelists ln-titlelist">
+				<h5>公告</h5>
+				<h5>緊急公告</h5>
+				<h5>活動專區</h5>
+				<h5>產品專區</h5>
+			</div>
+			<div class="informations ln-information">
+				<div class="ln-informations"> 
+					<div class="new_1">
+						<h3>【感謝媽咪-母親節蛋糕】</h3>
+						<h6>2018-04-10</h6>
+						<p>母親節蛋糕預購95折，任選2件再95折</p>
+						<hr class="hr1" align="center">
+					</div>
+
+					<div class="new_2">
+						<h3>【豆粉好友分享日】</h3>
+						<h6>2018-03-15</h6>
+						<p>豆粉專屬限購</p>
+						<hr class="hr1" align="center">
+					</div>
+
+					<div class="new_3">
+						<h3>【柚蜜系列茶飲】</h3>
+						<h6>2018-02-14</h6>
+						<p>豆粉專屬限購</p>
+						<hr class="hr1" align="center">
+					</div>
+
+				</div> -->
+			</div>
+		</div>
+		<div id="coffee-bean-introduction" class="Area coffee-bean-introduction"><!-- 豆豆介紹 -->
+			<div class="titlenames cb-titlename">
+				<h2 align="center">豆豆介紹</h2>
+			</div>
+			<div class="demo">  
+			    <div id="tabs5" class="mainNavg titlelists cb-titlelist" align="center">  
+			        <ul>  
+			            <li id="tab_a-cb-1" onclick="changeTab_cb(1)" class="nowShowA">咖啡豆</li>  
+			            <li id="tab_a-cb-2" onclick="changeTab_cb(2)" class="otherA">耳掛式</li>  			              
+			        </ul>  
+			    </div>  
+			    <div id="tabs-cb-1" class="showTabDiv informations cb-information " style='display:block;'>
+			    	<div class="s_listnames cb-s_listname">
+						<div class="box"><h5 >咖啡豆</h5></div>
+						<!-- <h5 >耳掛式</h5> -->
+					</div> 
+			       <!--  tabs1的內容 -->
+			        <div class="imgboxs cb-imgbox">
+						<div class="card cb-card_1">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/1_Nanyi-Style.jpg);">
+								<div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>		
+								</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：哥倫比亞</p>
+								<p class="p2">說明：豆香氣偏果香</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$215</p>
+							</div>
+						</div>
+
+						<div class="card cb-card_2">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/2_Featured-Mamba-Synthetic-Beans.jpg);">
+								<div class="mask">
+									<p class="p1" >精選曼巴綜合豆</p>			
+								</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：印尼</p>
+								<p class="p2">說明：香氣濃烈、口感醇厚的風味深受眾人喜愛</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$280</p>
+							</div>
+						</div>
+
+						<div class="card cb-card_3">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/3.Secrecy-Synthetic-Beans.gif);">
+								<div class="mask">
+									<p class="p1" >義式綜合豆</p>			
+								</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：阿拉比卡</p>
+								<p class="p2">說明：優雅的香氣，滑順的濃郁焦糖甜香口感</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$180</p>
+							</div>
+						</div>
+						<div class="card cb-card_4">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/4.Brazil-Celadon.jpg);">
+								<div class="mask">
+									<p class="p1">喜拉朵</p>			
+								</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：巴西</p>
+								<p class="p2">說明：瓜果香氣帶些許柑橘味，伴隨莓果味</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$160</p>
+							</div>
+						</div>
+						<div class="card cb-card_5">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/5.Snow-Pea.jpg);">
+								<div class="mask">
+									<p class="p1" >雪峰</p>			
+								</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：哥倫比亞</p>
+								<p class="p2">說明：明亮果香，堅果味明顯，味道豐富多變</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$330</p>
+							</div>
+						</div>
+						<div class="card cb-card_6">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/6.Golden-Ding-on-Mandheling.jpg);">
+							<div class="mask">
+								<p class="p1">黃金鼎上曼特寧</p>			
+							</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：哥倫比亞</p>
+								<p class="p2">說明：牧草香味帶著淡淡的奶油香</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$590</p>
+							</div>
+						</div>
+					</div>
+			    </div>  
+			    <div id="tabs-cb-2" class="showTabDiv informations cb-information" style='display:none;'>  
+			       <!-- 耳掛式的內容 -->
+			       <div class="s_listnames cb-s_listname">
+						<div class="box"><h5 >耳掛式</h5></div>
+						<!-- <h5 >耳掛式</h5> -->
+					</div> 
+					<div class="imgboxs cb-imgbox">
+						<div class="card cb-card_1">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/1_Nanyi-Style.jpg);">
+								<div class="mask">
+									<p class="p1" >illy 咖啡(深焙)</p>		
+								</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：阿拉比加</p>
+								<p class="p2">說明：橘花香飽滿悠長，宛如烘烤過的堅果香氣</p>
+								<p class="p2">容量：9gx5包／盒</p>
+								<p class="p3">$160</p>
+							</div>
+						</div>
+						<div class="card cb-card_1">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/1_Nanyi-Style.jpg);">
+								<div class="mask">
+									<p class="p1" >想望咖啡</p>		
+								</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：哥斯大黎加</p>
+								<p class="p2">說明：溫和果酸、甜美香氣、厚醇口感。</p>
+								<p class="p2">容量：15gx5包／盒</p>
+								<p class="p3">$452</p>
+							</div>
+						</div>
+						<div class="card cb-card_1">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/1_Nanyi-Style.jpg);">
+								<div class="mask">
+									<p class="p1" >藝伎咖啡</p>		
+								</div>
+							</div>
+							<div class="txt cb-txt">
+								<p class="p2">產地：巴拿馬翡翠莊園</p>
+								<p class="p2">說明：甘甜果香、檸檬、柑橘、草莓般的果酸。</p>
+								<p class="p2">容量：10gx4包／盒</p>
+								<p class="p3">$510</p>
+							</div>
+						</div>
+					</div>			        
+			    </div> 			   
+			</div>							
+		</div>
+	
+		<div id="product-area" class="Area product-area"><!-- 產品專區 -->
+			<div class="titlenames pa-titlename">
+				<h2 align="center">產品專區</h2>
+			</div>
+			
+			<div class="demo">  
+			    <div id="tabs6" class="mainNavg titlelists pa-titlelist" align="center">  
+			        <ul>  
+			            <li id="tab_a-pa-1" onclick="changeTab_pa(1)" class="nowShowA">飲品</li>  
+			            <li id="tab_a-pa-2" onclick="changeTab_pa(2)" class="otherA">茶點</li>  
+			            <li id="tab_a-pa-3" onclick="changeTab_pa(3)" class="otherA">周邊商品</li>			        
+			        </ul>  
+			    </div>  
+			    <div id="tabs-pa-1" class="showTabDiv informations pa-information" style='display:block;'>  
+			        <!-- tabs123的內容 -->
+			        <div class="demos">  
+					    <div id="tabs7" class="mainNavg s_listnames pa-s_listname">  
+					        <ul>  
+					            <li id="tab_a-pas1-1"  onclick="changeTab_pas1(1) " class="nowShowA "><h5>咖啡</h5></li>  
+					            <li id="tab_a-pas1-2"  onclick="changeTab_pas1(2)" class="otherA"><h5>茶飲</h5></li>  
+					            <li id="tab_a-pas1-3"  onclick="changeTab_pas1(3)" class="otherA"><h5>果汁</h5></li>
+					            <li id="tab_a-pas1-4"  onclick="changeTab_pas1(4)" class="otherA"><h5>冰沙</h5></li>  
+					        </ul>  
+					    </div>  
+					    <div id="tabs-pas1-1" class="showTabDiv informations pa-information" style='display:block;float:left;width:100%;' align="left">  
+					        <!-- tabs123的內容 -->
+					        <div class="imgboxs pas1-imgbox">
+								<div class="card pas1-card_1">
+									<div class="pic pas1-pic" style="background-image: url(img/3.Product-Area/coffee/Signature-coffee.jpg);">
+										<!-- 咖啡的內容 -->
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：招牌咖啡</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$70/85</p>
+									</div>
+								</div>
+									<div class="card pas1-card_2">
+									<div class="pic pas1-pic" style="background-image: url(img/3.Product-Area/coffee/American-coffee.jpg);">
+										<!-- 咖啡的內容 -->
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：美式咖啡</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$55/65</p>
+									</div>
+								</div>
+									<div class="card pas1-card_3">
+									<div class="pic pas1-pic" style="background-image: url(img/3.Product-Area/coffee/Latte.jpg);">
+										<!-- 咖啡的內容 -->
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：拿鐵咖啡</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$75/85</p>
+									</div>
+								</div>
+									<div class="card pas1-card_4">
+									<div class="pic pas1-pic" style="background-image: url(img/3.Product-Area/coffee/Cappuccino.jpg);">
+										<!-- 咖啡的內容 -->
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：卡布奇諾</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$70/80</p>
+									</div>
+								</div>
+									<div class="card pas1-card_5">
+									<div class="pic pas1-pic" style="background-image: url(img/3.Product-Area/coffee/Signature-coffee.jpg);">
+										<!-- 咖啡的內容 -->
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：摩卡咖啡</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$70/80</p>
+									</div>
+								</div>
+									<div class="card pas1-card_6">
+									<div class="pic pas1-pic" style="background-image: url(img/3.Product-Area/coffee/Caramel-macchiato.jpg);">
+										<!-- 咖啡的內容 -->
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：焦糖瑪奇朵</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$80/90</p>
+									</div>
+								</div>
+									<div class="card pas1-card_7">
+									<div class="pic pas1-pic" style="background-image: url(img/3.Product-Area/coffee/Rose-Salt-Coffee.jpg);">
+										<!-- 咖啡的內容 -->
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：玫瑰鹽咖啡</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$70/110</p>
+									</div>
+								</div>
+								<div class="card pas1-card_8" style="box-shadow: none;"></div>
+								<div class="card pas1-card_8" style="box-shadow: none;"></div>	
+							</div>
+					    </div>  
+					    <div id="tabs-pas1-2" class="showTabDiv informations pa-information" style='display:none;float:left;width:100%;'>  
+					        <!-- 茶飲的內容 -->
+					        <div class="imgboxs pas1-2-imgbox">
+								<div class="card pas1-2-card_1">
+									<div class="pic pas1-2-pic" style="background-image: url(img/3.Product-Area/Tea/Ceylon-Black-Tea.jpg);">
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：錫蘭紅茶</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$30/40</p>
+									</div>
+								</div>
+								<div class="card pas1-2-card_2">
+									<div class="pic pas1-2-pic" style="background-image: url(img/3.Product-Area/Tea/Earl-Grey-Tea.jpg);">
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：錫蘭紅茶</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$30/40</p>
+									</div>
+								</div>
+								<div class="card pas1-2-card_3">
+									<div class="pic pas1-2-pic" style="background-image: url(img/3.Product-Area/Tea/Moss-Green-Tea.jpeg);">
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：茉香綠茶</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$30/40</p>
+									</div>
+								</div>
+								<div class="card pas1-2-card_4">
+									<div class="pic pas1-2-pic" style="background-image: url(img/3.Product-Area/Tea/English-milk-tea.jpg);">
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：英式奶茶</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$45/55</p>
+									</div>
+								</div>
+
+
+								<div class="card pas1-2-card_2" style="box-shadow: none;"></div>
+								<div class="card pas1-2-card_3" style="box-shadow: none;"></div>
+								</div>
+							</div>
+					    </div>  
+					    
+					    <div id="tabs-pas1-3" class="showTabDiv informations pa-information" style='display:none;float:left;width:100%'>  
+					        <!-- 果汁的內容 -->
+					        <div class="imgboxs pas1-3-imgbox">
+								<div class="card pas1-3-card_1">
+									<div class="pic pas1-3-pic" style="background-image: url(img//3.Product-Area/fruit-tea/fruit-tea.jpg);">
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：水果茶</p>
+										
+										<p class="p2">容量：M / L</p>
+										<p class="p2">溫度：冷 /熱</p>
+										<p class="p3">$30/40</p>
+									</div>
+								</div>
+								<div class="card pas1-3-card_1" style="box-shadow:none;">
+									<!-- <div class="mask">
+										<p class="p1" >產品尚未上架</p>			
+									</div> -->
+								</div>
+								<div class="card pas1-3-card_1" style="box-shadow:none;"></div>
+								<div class="card pas1-3-card_1" style="box-shadow:none;" ></div>
+								<div class="card pas1-3-card_1" style="box-shadow:none;"></div>
+								<div class="card pas1-3-card_1" style="box-shadow:none;"></div>
+							</div>
+					    </div>
+
+					    <div id="tabs-pas1-4" class="showTabDiv informations pa-information" style='display:none;float:left;width:100%'>  
+					        <!-- 冰砂的內容 -->
+							<div class="imgboxs pas1-4-imgbox">
+								<div class="card pas1-4-card_1">
+									<div class="pic pas1-4-pic" style="background-image: url(img/3.Product-Area/Smoothie/Mango-Smoothie.jpg);">
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：芒果冰沙</p>
+										
+										<p class="p2">容量：M </p>
+										<p class="p2">溫度：冷</p>
+										<p class="p3">$30/40</p>
+									</div>
+								</div>
+								
+								<div class="card pas1-3-card_1">
+									<div class="pic pas1-4-pic" style="background-image: url(img/3.Product-Area/Smoothie/Mocha-cocoa-chips.jpg);">
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：摩卡可可碎片</p>
+										
+										<p class="p2">容量：M </p>
+										<p class="p2">溫度：冷</p>
+										<p class="p3">$80</p>
+									</div>
+								</div>
+								<div class="card pas1-3-card_1">
+									<div class="pic pas1-4-pic" style="background-image: url(img/3.Product-Area/Smoothie/Chocolate-cocoa-chips-2.jpg);">
+										<!-- <div class="mask">
+											<p class="p1" >南義風情綜合咖啡豆</p>			
+										</div> -->
+									</div>
+									<div class="txt pas1-txt">
+										<p class="p2">商品名稱：巧克力可可碎片</p>
+										
+										<p class="p2">容量：M </p>
+										<p class="p2">溫度：冷</p>
+										<p class="p3">$80</p>
+									</div>
+								</div>
+								
+								
+								<div class="card pas1-3-card_1" style="box-shadow:none;"></div>
+								<div class="card pas1-3-card_1" style="box-shadow:none;"></div>
+								<div class="card pas1-3-card_1" style="box-shadow:none;"></div>
+							</div>					        
+					    </div> 
+					</div>
+			    </div> 
+
+			    <div id="tabs-pa-2" class="showTabDiv informations pa-information" style='display:none;'>  
+			        <div class="s_listnames cb-s_listname">
+						<div class="box"><h5 >茶點</h5></div>
+						<!-- <h5 >耳掛式</h5> -->
+					</div> 
+					<!-- 茶點內容 -->
+			        <div class="imgboxs pa-imgbox">
+						<div class="card pa-card_1">
+							<div class="pic pa-pic" style="background-image: url(img/3.Product-Area/refreshments/Shu-Fulei.jpg);">								
+							</div>
+							<div class="txt pa-txt">
+								<p class="p2">商品名稱：舒芙蕾</p>
+								<p class="p2">商品說明：入口即化的蛋糕，撒上細白的糖粉，為道地的美式起士蛋糕。</p>
+								<!-- <p class="p2">熱量：</p> -->
+								<p class="p3">$60</p>
+							</div>
+						</div>
+						<div class="card pa-card_2">
+							<div class="pic pa-pic" style="background-image: url(img/3.Product-Area/refreshments/Boston-1.jpg);">								
+							</div>
+							<div class="txt pa-txt">
+								<p class="p2">商品名稱：波士頓</p>
+								<p class="p2">商品說明：改良式的內餡，綿密細緻的口感，不同口感的牛奶蛋糕體。</p>
+								<!-- <p class="p2">熱量：</p> -->
+								<p class="p3">$40</p>
+							</div>
+						</div>
+						<div class="card pa-card_3">
+							<div class="pic pa-pic" style="background-image: url(img/3.Product-Area/refreshments/Lemon-Tower.jpg);">								
+							</div>
+							<div class="txt pa-txt">
+								<p class="p2">商品名稱：檸檬塔</p>
+								<p class="p2">商品說明：新鮮現榨綠檸檬奶油餡，搭配炙燒檸檬蛋白霜與酥脆派皮。</p>
+								<!-- <p class="p2">熱量：</p> -->
+								<p class="p3">$65</p>
+							</div>
+						</div>
+						<div class="card pa-card_4">
+							<div class="pic pa-pic" style="background-image: url(img/3.Product-Area/refreshments/Tiramisu.jpg);">								
+							</div>
+							<div class="txt pa-txt">
+								<p class="p2">商品名稱：提拉米蘇</p>
+								<p class="p2">商品說明：輕柔的手指蛋糕及濃醇的咖啡，撒上苦香可可粉，口感柔軟。</p>
+								<!-- <p class="p2">熱量：</p> -->
+								<p class="p3">$50</p>
+							</div>
+						</div>
+						<div class="card pa-card_5">
+							<div class="pic pa-pic" style="background-image: url(img/3.Product-Area/refreshments/Strawberry-Cake-1.jpeg);">								
+							</div>
+							<div class="txt pa-txt">
+								<p class="p2">商品名稱：草莓蛋糕</p>
+								<p class="p2">商品說明：清新的乳酪慕斯，內餡酸甜的蘋果丁和檸檬餡，乳酪戚風蛋糕。</p>
+								<!-- <p class="p2">熱量：</p> -->
+								<p class="p3">$65</p>
+							</div>
+						</div>
+						<div class="card pa-card_6">
+							<div class="pic pa-pic" style="background-image: url(img/3.Product-Area/refreshments/Handmade-cookies-2.jpg);">								
+							</div>
+							<div class="txt pa-txt">
+								<p class="p2">商品名稱：手工餅乾</p>
+								<p class="p2">商品說明：純手工捏製的法式小巧酥餅、獨創的彈珠米果，餅乾香濃酥脆。</p>
+								<!-- <p class="p2">熱量：</p> -->
+								<p class="p3">$60</p>
+							</div>
+						</div>
+					</div>
+			    </div> 
+
+			    <div id="tabs-pa-3" class="showTabDiv informations pa-information" style='display:none;'>  
+			        <!-- tabs3的內容 -->
+			        <div class="s_listnames cb-s_listname">
+						<div class="box"><h5 >周邊商品</h5></div>
+						<!-- <h5 >耳掛式</h5> -->
+					</div> 
+			        <div class="imgboxs pa-imgbox">
+						<div class="card pa-card_1">
+							<div class="pic pa-pic" style="background-image: url(img/2.Coffee-beans/1_Nanyi-Style.jpg);">								
+							</div>
+							<div class="txt pa-txt">
+								<p class="p2">商品名稱：哥倫比亞</p>
+								<p class="p2">商品說明：</p>
+								<p class="p2">單位：</p>
+								<p class="p3">$215</p>
+							</div>
+						</div>
+					</div>
+			    </div>
+			     
+			</div>
+
+
+
+			<!-- <div class="titlelists pa-titlelist" align="center">
+				<h5>飲品</h5>
+				<h5>茶點</h5>
+				<h5>周邊商品</h5>
+			</div> -->
+			<!-- <div class="informations pa-information">
+				<div class="s_listnames pa-s_listname">
+					<div class="box"><h5>咖啡</h5></div>
+					<div class="box"><h5>茶飲</h5></div>
+					<div class="box"><h5>果汁</h5></div>
+					<div class="box"><h5>冰沙</h5></div>
+				</div>
+				<div class="imgboxs pa-imgbox">
+					<div class="card pa-card">
+						<div class="pic pa-pic"></div>
+						<div class="txt pa-txt"></div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+<!-- 123 -->
+
+
+		<div id="offee-appliance" class="Area coffee-appliance"><!-- 咖啡器具 -->
+			<div class="titlenames ca-titlename">
+				<h2 align="center">咖啡器具</h2>
+			</div>
+			<div class="demo">  
+			    <div id="tabs9" class="mainNavg titlelists ca-titlelist" align="center">  
+			        <ul>  
+			            <li id="tab_a-ca-1" onclick="changeTab_ca(1)" class="nowShowA">手沖壺</li>  
+			            <li id="tab_a-ca-2" onclick="changeTab_ca(2)" class="otherA">濾杯</li>
+			            <li id="tab_a-ca-3" onclick="changeTab_ca(3)" class="otherA">研磨機器</li>  			             
+			        </ul>  
+			    </div>  
+			    <div id="tabs-ca-1" class="showTabDiv informations ca-information " style='display:block;'>
+			    	<div class="s_listnames ca-s_listname">
+						<div class="box"><h5 >手沖壺</h5></div>
+						<!-- <h5 >耳掛式</h5> -->
+					</div> 
+			       <!--  tabs1的內容 -->
+			        <div class="imgboxs ca-imgbox">
+						<div class="card ca-card_1">
+							<div class="pic ca-pic" style="background-image: url(img/4.Coffee-appliance/Hand-pot/1.Junior-escort-pot.jpg);">
+								<!-- <div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div> -->
+							</div>
+							<div class="txt ca-txt">
+								<p class="p2">Junior隨行手沖壺(四色)</p>
+								<p class="p2">說明：細口壺</p>
+								<p class="p2">容量：250ml</p>
+								<p class="p3">$650</p>
+							</div>
+						</div>
+
+						<div class="card ca-card_2">
+							<div class="pic ca-pic" style="background-image: url(img/4.Coffee-appliance/Hand-pot/2.Hario-V60-stainless-steel.jpg);">
+								<!-- <div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div> -->
+							</div>
+							<div class="txt ca-txt">
+								<p class="p2">Junior 細口實木滴漏壺</p>
+								<p class="p2">說明：細口壺</p>
+								<p class="p2">容量：350ml</p>
+								<p class="p3">$1,150</p>
+							</div>
+						</div>
+
+						<div class="card ca-card_3">
+							<div class="pic ca-pic" style="background-image: url(img/4.Coffee-appliance/Hand-pot/3.Junior-Fine-wood-drip-pot.JPG);">
+								<!-- <div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div> -->
+							</div>
+							<div class="txt ca-txt">
+								<p class="p2">Hario V60 手沖壼</p>
+								<p class="p2">說明：不鏽鋼細口壺</p>
+								<p class="p2">容量：350ml</p>
+								<p class="p3">$1,000</p>
+							</div>
+						</div>
+						<div class="card ca-card_4">
+							<div class="pic ca-pic" style="background-image: url(img/4.Coffee-appliance/Hand-pot/4.Kalita-stainless-steel.jpg);">
+								<!-- <div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div> -->
+							</div>
+							<div class="txt ca-txt">
+								<p class="p2">Kalita 手沖壺</p>
+								<p class="p2">說明：不鏽鋼細口壺</p>
+								<p class="p2">容量：700ml</p>
+								<p class="p3">$1,980</p>
+							</div>
+						</div>
+						<div class="card ca-card_5">
+							<div class="pic ca-pic" style="background-image: url(img/4.Coffee-appliance/Hand-pot/5.Kalita-Stainless-Steel-Handlebars.jpg);">
+								<!-- <div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div> -->
+							</div>
+							<div class="txt ca-txt">
+								<p class="p2">Kalita 原木手把手沖壼</p>
+								<p class="p2">說明：不鏽鋼細口壺</p>
+								<p class="p2">容量：350ml</p>
+								<p class="p3">$2,600</p>
+							</div>
+						</div>
+						<div class="card ca-card_6">
+							<div class="pic ca-pic" style="background-image: url(img/4.Coffee-appliance/Hand-pot/6.Kalita-copper-POT900.png);">
+								<!-- <div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div> -->
+							</div>
+							<div class="txt ca-txt">
+								<p class="p2">Kalita 手沖銅壼</p>
+								<p class="p2">說明：細口壺</p>
+								<p class="p2">容量：350ml</p>
+								<p class="p3">$3,350</p>
+							</div>
+						</div>
+					</div>
+			    </div>  
+			    <div id="tabs-ca-2" class="showTabDiv informations ca-information" style='display:none;'>  
+			        tabs2的內容
+			        濾杯
+			    </div>
+			    <div id="tabs-ca-3" class="showTabDiv informations ca-information" style='display:none;'>  
+			        tabs3的內容
+			        研磨機器
+			    </div> 
+			</div>     
+ 	
+		
+
+
+			
+
+			<!-- <div class="titlelists ca-titlelist" align="center">
+				<h5>手沖壺</h5>
+				<h5>濾杯</h5>
+				<h5>研磨機器</h5>
+			</div>
+			<div class="informations ca-information">
+				<div class="s_listnames ca-s_listname">
+					<div class="box"><h5>手沖壺</h5></div>
+				</div>
+				<div class="imgboxs ca-imgbox">
+					<div class="card ca-card">
+						<div class="pic ca-pic"></div>
+						<div class="txt ca-txt"></div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+		<div id="knowledge-share" class="Area knowledge-share"><!-- 知識補給站 -->
+			<div class="titlenames ak-titlename">
+				<h2 align="center">知識補給站</h2>
+			</div>
+			<div class="demo">  
+			    <div id="tabs10" class="mainNavg titlelists ks-titlelist" align="center">  
+			        <ul>  
+			            <li id="tab_a-ks-1" onclick="changeTab_ks(1)" class="nowShowA">新聞分享</li>  
+			            <li id="tab_a-ks-2" onclick="changeTab_ks(2)" class="otherA">推薦文章</li>  			              
+			        </ul>  
+			    </div>  
+			    <div id="tabs-ks-1" class="showTabDiv informations ks-information " style='display:block;'>
+			    	<div class="s_listnames ks-s_listname">
+						<div class="box"><h5 >新聞分享</h5></div>
+						<!-- <h5 >耳掛式</h5> -->
+					</div> 
+			       <!--  tabs1的內容 -->
+			        <div class="imgboxs ks-imgbox">
+						<div class="card ks-card_1">
+							<div class="pic ks-pic" style="background-image: url(img/2.Coffee-beans/1_Nanyi-Style.jpg);">
+								<div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div>
+							</div>
+							<div class="txt ks-txt">
+								<p class="p2">產地：哥倫比亞</p>
+								<p class="p2">說明：豆香氣偏果香</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$215</p>
+							</div>
+						</div>
+
+						<div class="card ks-card_2">
+							<div class="pic ks-pic" style="background-image: url(img/2.Coffee-beans/1_Nanyi-Style.jpg);">
+								<div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div>
+							</div>
+							<div class="txt ks-txt">
+								<p class="p2">產地：哥倫比亞</p>
+								<p class="p2">說明：豆香氣偏果香</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$215</p>
+							</div>
+						</div>
+
+						<div class="card ks-card_3">
+							<div class="pic cb-pic" style="background-image: url(img/2.Coffee-beans/1_Nanyi-Style.jpg);">
+								<div class="mask">
+									<p class="p1" >南義風情綜合咖啡豆</p>			
+								</div>
+							</div>
+							<div class="txt ks-txt">
+								<p class="p2">產地：哥倫比亞</p>
+								<p class="p2">說明：豆香氣偏果香</p>
+								<p class="p2">容量：1磅</p>
+								<p class="p3">$215</p>
+							</div>
+						</div>
+					</div>
+			    </div>  
+			    <div id="tabs-ks-2" class="showTabDiv informations ks-information" style='display:none;'>  
+			        tabs2的內容
+			        推薦文章
+			    </div> 
+			</div>
+
+			
+
+
+
+
+
+			<!-- <div class="informations ks-information">
+				<div class="titlelists ks-titlelist" align="center">
+				<h5>新聞分享</h5>
+				<h5>推薦文章</h5>
+				
+			</div>				<div class="s_listnames ks-s_listname">
+					<div class="box"><h5>新聞分享</h5></div>
+					<!-- <h5>推薦文章</h5> -->
+			<!-- 	</div>
+				
+			</div> --> 
+		</div>
+	</div>	
+	<div class="Area end-area"></div>
+
+
+	
+</div>  
+
+<script>
+	function changeTab(index)  
+	{  
+	    document.getElementById("tabs-"+index).style.display="block";     
+	    document.getElementById("tab_a-"+index).className="nowShowA";  
+	    var i=1;  
+	    while(document.getElementById("tabs-"+i))  
+	    {  
+	        if(i!=index){  
+	        clearDisplay(i);  
+	        document.getElementById("tab_a-"+i).className="otherA";  
+	        }  
+	        i++;  
+	    }  
+	}  
+	function clearDisplay(index)  
+	{  
+	    document.getElementById("tabs-"+index).style.display="none";  
+	}  
+// -----------
+	function changeTab_ln(index)  
+		{  
+		    document.getElementById("tabs-ln-"+index).style.display="block";     
+		    document.getElementById("tab_a-ln-"+index).className="nowShowA";  
+		    var i=1;  
+		    while(document.getElementById("tabs-ln-"+i))  
+		    {  
+		        if(i!=index){  
+		        clearDisplay_ln(i);  
+		        document.getElementById("tab_a-ln-"+i).className="otherA";  
+		        }  
+		        i++;  
+		    }  
+		}  
+		function clearDisplay_ln(index)  
+		{  
+		    document.getElementById("tabs-ln-"+index).style.display="none";  
+		}
+
+//-----------------
+		function changeTab_cb(index)  
+		{  
+		    document.getElementById("tabs-cb-"+index).style.display="block";     
+		    document.getElementById("tab_a-cb-"+index).className="nowShowA";  
+		    var i=1;  
+		    while(document.getElementById("tabs-cb-"+i))  
+		    {  
+		        if(i!=index){  
+		        clearDisplay_cb(i);  
+		        document.getElementById("tab_a-cb-"+i).className="otherA";  
+		        }  
+		        i++;  
+		    }  
+		}  
+		function clearDisplay_cb(index)  
+		{  
+		    document.getElementById("tabs-cb-"+index).style.display="none";  
+		}
+//-----------------
+		function changeTab_pa(index)  
+		{  
+		    document.getElementById("tabs-pa-"+index).style.display="block";     
+		    document.getElementById("tab_a-pa-"+index).className="nowShowA";  
+		    var i=1;  
+		    while(document.getElementById("tabs-pa-"+i))  
+		    {  
+		        if(i!=index){  
+		        clearDisplay_pa(i);  
+		        document.getElementById("tab_a-pa-"+i).className="otherA";  
+		        }  
+		        i++;  
+		    }  
+		}  
+		function clearDisplay_pa(index)  
+		{  
+		    document.getElementById("tabs-pa-"+index).style.display="none";  
+		}
+//-------------------------------------
+		function changeTab_pas1(index)  
+		{  
+		    document.getElementById("tabs-pas1-"+index).style.display="block";     
+		    document.getElementById("tab_a-pas1-"+index).className="nowShowA";  
+		    var i=1;  
+		    while(document.getElementById("tabs-pas1-"+i))  
+		    {  
+		        if(i!=index){  
+		        clearDisplay_pas1(i);  
+		        document.getElementById("tab_a-pas1-"+i).className="otherA";  
+		        }  
+		        i++;  
+		    }  
+		}  
+		function clearDisplay_pas1(index)  
+		{  
+		    document.getElementById("tabs-pas1-"+index).style.display="none";  
+		}
+
+//-------------------------------------
+		function changeTab_ca(index)  
+		{  
+		    document.getElementById("tabs-ca-"+index).style.display="block";     
+		    document.getElementById("tab_a-ca-"+index).className="nowShowA";  
+		    var i=1;  
+		    while(document.getElementById("tabs-ca-"+i))  
+		    {  
+		        if(i!=index){  
+		        clearDisplay_ca(i);  
+		        document.getElementById("tab_a-ca-"+i).className="otherA";  
+		        }  
+		        i++;  
+		    }  
+		}  
+		function clearDisplay_ca(index)  
+		{  
+		    document.getElementById("tabs-ca-"+index).style.display="none";  
+		}
+//-------------------------------------
+		function changeTab_ks(index)  
+		{  
+		    document.getElementById("tabs-ks-"+index).style.display="block";     
+		    document.getElementById("tab_a-ks-"+index).className="nowShowA";  
+		    var i=1;  
+		    while(document.getElementById("tabs-ks-"+i))  
+		    {  
+		        if(i!=index){  
+		        clearDisplay_ks(i);  
+		        document.getElementById("tab_a-ks-"+i).className="otherA";  
+		        }  
+		        i++;  
+		    }  
+		}  
+		function clearDisplay_ks(index)  
+		{  
+		    document.getElementById("tabs-ks-"+index).style.display="none";  
+		}
+
+</script>
+
+	 <!-- Swiper JS  輪播-->
+  <script src="style/swiper.min.js"></script>
+
+  <!-- Initialize Swiper 輪播-->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 5000,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        // disableOnInteraction: true,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
 </body>
 </html>
